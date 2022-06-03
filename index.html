@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="pokemen, tarjeta" />
+    <meta name="author" content="Antonio" />
+    <meta name="description" content="tarjeta de pokemen" />
+    <link rel="stylesheet" href="./asset/style/estilos.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Pokemon</title>
+  </head>
+  <body>
+    <header>
+      <h1>Pokemon</h1>
+    </header>
+    <div id="cont">
+      <input
+        type="search"
+        name="search"
+        placeholder="Buscar tu pokemon"
+        autofocus
+        id="search"
+      />
+      <br />
+      <button class="buscar" type="button">Buscar</button>
+      <article class="filtro">
+        <section>
+          <button class="filtrar" type="button">filtrar</button>
+        </section>
+        <section>
+          <label for="tipo de pokemon">Tipo de pokemon</label>
+          <select name="pokemon" class="tipo_de_pokemon">
+            <option value="" disabled="disabled">Tipo de pokemon</option>
+            <option value="Fuego">Fuego</option>
+            <option value="Agua">Agua</option>
+            <option value="Tierra">Tierra</option>
+          </select>
+        </section>
+
+        <section>
+          <label for="peso de pokemen">Peso de pokemon</label>
+          <select name="peso" class="Peso_de_pokemon">
+            <option value="" disabled="disabled">Peso de pokemon</option>
+            <option value="5">5-10</option>
+            <option value="10">10-15</option>
+            <option value="20">20-25</option>
+          </select>
+        </section>
+
+        <section>
+          <label for="Fuerza">Categoria de fuerza</label>
+          <select name="Fuerza" class="fuerza_de_pokemon">
+            <option value="" disabled="disabled">Categoria de fuerza</option>
+            <option value="baja">Baja</option>
+            <option value="media">Media</option>
+            <option value="alta">Alta</option>
+          </select>
+        </section>
+      </article>
+      <article class="cabeza">
+        <section class="logo">
+          <img class="logo-img" src="./asset/img/logo.png" alt="" />
+        </section>
+        <section class="nombre_pokemon">nombre del pokemon</section>
+      </article>
+      <article class="cuerpo">
+        <section class="img"></section>
+        <section class="texto">
+          <p class="descripcion_de_pokemon"></p>
+          <hr />
+        </section>
+      </article>
+      <footer class="pie">
+        <button type="button" class="pie_button">Mas caracteristicas</button>
+        <section class="descripcion_pokemon"></section>
+      </footer>
+    </div>
+    <script src="./asset/js/script.js "></script>
+  </body>
+</html>

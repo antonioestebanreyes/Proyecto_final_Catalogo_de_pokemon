@@ -1,0 +1,93 @@
+[
+   {
+       "name":"Ivysaur",
+       "altura":0.8,
+       "categoria":"planata",
+       "peso":13,
+       "photo":"https://pokefanaticos.com/pokedex/assets/images/pokemon_iconos/2.png",
+       "fuerza":"baja",
+       "descripcion":"Cuando el bulbo de su lomo se hincha, desprende un dulce aroma para indicar el florecimiento."
+    },
+  {
+       "name":"Venusaur",
+       "altura":2,
+       "categoria":"planata",
+       "peso":18,
+       "photo":"https://pokefanaticos.com/pokedex/assets/images/pokemon_iconos/3.png",
+       "fuerza":"media",
+       "descripcion":"Después de un día de lluvia, la flor de su lomo tiene un aroma más potente y atrae a otros Pokémon."
+    },
+    {
+       "name":"Wartortle",
+       "altura":1,
+       "categoria":"agua",
+       "peso":22,
+       "photo":"https://pokefanaticos.com/pokedex/assets/images/pokemon_imagenes/8.png",
+       "fuerza":"alta",
+       "descripcion":"Se dice que vive 10 000 años. Su peluda cola es un símbolo de longevidad."
+    },
+    {
+       "name":"chamander",
+       "altura":0.6,
+       "categoria":"fuego",
+       "peso":8,
+       "photo":"https://pokefanaticos.com/pokedex/assets/images/pokemon_iconos/4.png",
+       "fuerza":"alta",
+       "descripcion":"Este Pokémon nace con una llama en la punta de la cola. Si la llama se apagara, el Pokémon se debilitaría."
+    },
+    {
+       "name":"charmelo",
+       "altura":1.1,
+       "categoria":"fuego",
+       "peso":19,
+       "photo":"https://pokefanaticos.com/pokedex/assets/images/pokemon_iconos/5.png",
+       "fuerza":"alta",
+       "descripcion":"Cuando balancea la ardiente cola, eleva la temperatura a niveles muy altos."
+    },
+    {
+       "name":"squirtle",
+       "altura":1.9,
+       "categoria":"agua",
+       "peso":12,
+       "photo":"https://pokefanaticos.com/pokedex/assets/images/pokemon_imagenes/1.png",
+       "fuerza":"media",
+       "descripcion":"Lanza agua a su presa desde el agua. Se esconde en su concha cuando se siente en peligro."
+    },
+    {
+       "name":"Blastoiser",
+       "altura":1.6,
+       "categoria":"agua",
+       "peso":12,
+       "photo":"https://pokefanaticos.com/pokedex/assets/images/pokemon_imagenes/9.png",
+       "fuerza":"baja",
+      "descripcion":"Es un Pokémon imponente. Tiene reactores de agua en el caparazón, que le sirven para atacar con fuerza."
+
+    },
+    {
+       "name":"Caterpie",
+       "altura":0.6,
+       "categoria":"bicho",
+       "peso":22,
+       "photo":"https://pokefanaticos.com/pokedex/assets/images/pokemon_imagenes/1.png",
+       "fuerza":"alta",
+       "descripcion":"Sus patas tienen ventosas con las que se adhiere a cualquier sitio. Escala árboles buscando forraje."
+    },
+    {
+       "name":"Butterfree",
+       "altura":8,
+       "categoria":"planata",
+       "peso":2.8,
+       "photo":"https://pokefanaticos.com/pokedex/assets/images/pokemon_imagenes/12.png",
+       "fuerza":"media",
+       "descripcion":"Tiene las alas protegidas con una capa impermeable, de ahí que pueda volar también cuando llueve."
+    },
+    {
+       "name":"Weedle",
+       "altura":6,
+       "categoria":"planata",
+       "peso":12,
+       "photo":"https://pokefanaticos.com/pokedex/assets/images/pokemon_imagenes/13.png",
+       "fuerza":"alta",
+       "descripcion":"Su venenoso aguijón es muy potente y su colorido cuerpo hace que los enemigos huyan."
+    }
+ ]

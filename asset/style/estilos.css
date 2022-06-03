@@ -1,0 +1,255 @@
+#cont {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  background-color: aqua;
+  font-family: "Roboto", sans-serif, Arial, Helvetica, "Times New Roman";
+}
+.filtro {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 30px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 22px;
+}
+.filtro section {
+  width: 20%;
+  height: 30px;
+  border: solid 2px black;
+  background-color: white;
+  padding: 12px;
+  margin: 12px;
+  border-radius: 45px;
+  background-color: black;
+  color: antiquewhite;
+}
+.filtrar {
+  background-color: rgb(20, 19, 19);
+  width: 100%;
+  height: 100%;
+  color: rgb(240, 233, 233);
+  border-radius: 50px;
+}
+
+#cont {
+  animation-name: contenedor;
+  animation-duration: 22s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes contenedor {
+  0% {
+    background: radial-gradient(circle, grey, rgb(9, 250, 0), purple, pink);
+  }
+  25% {
+    background: radial-gradient(
+      circle,
+      rgb(170, 19, 19),
+      rgb(58, 223, 17),
+      rgb(218, 77, 218),
+      pink
+    );
+  }
+  50% {
+    background: radial-gradient(
+      circle,
+      rgb(61, 5, 5),
+      rgb(22, 138, 216),
+      purple,
+      pink
+    );
+  }
+  75% {
+    background: radial-gradient(circle, grey, rgb(40, 37, 223), purple, pink);
+  }
+
+  100% {
+    background: radial-gradient(circle, grey, rgb(6, 164, 192), purple, pink);
+  }
+}
+.cabeza {
+  width: 500px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(26, 24, 24);
+  margin-top: 40px;
+}
+.pie {
+  width: 500px;
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(26, 24, 24);
+}
+
+.cuerpo {
+  width: 500px;
+  height: 250px;
+  display: flex;
+  flex-direction: row;
+  perspective: 100px;
+  border-bottom: 2px rgb(19, 18, 18);
+  border-style: dashed;
+}
+
+.cuerpo {
+  display: flex;
+  flex-direction: row;
+}
+.texto {
+  width: 250px;
+  height: 100%;
+  background-color: rgb(24, 21, 21);
+  color: white;
+}
+
+.descripcion_de_pokemon {
+  text-align: justify;
+  font-size: 100%;
+  font-weight: bold;
+}
+.img {
+  width: 250px;
+  height: 100%;
+  border: 2px black;
+  border-style: dashed;
+  overflow-y: auto;
+}
+.logo {
+  width: 140px;
+  height: 98px;
+}
+.logo-img {
+  width: 100%;
+  height: 90%;
+  border-radius: 70%;
+}
+
+.nombre_pokemon {
+  width: 350px;
+  height: 98px;
+  text-align: center;
+  font-size: xx-large;
+  font-style: italic;
+  font-weight: bold;
+  text-indent: 34px;
+  color: white;
+}
+
+.pokemon {
+  width: 100%;
+  height: 100%;
+}
+
+.buscar {
+  background: rgb(49, 204, 231);
+  border-radius: 20px;
+  width: 89%;
+  height: 20px;
+  margin-left: 70px;
+  padding: 24px;
+  border: 2px black;
+  border-style: dashed;
+  margin-bottom: 7px;
+}
+
+#search {
+  width: 90%;
+  height: 25px;
+  border-radius: 50px;
+  background: rgb(255, 255, 255);
+  border: 2px solid rgb(182, 23, 23);
+  margin-bottom: 3px;
+  margin-left: 40px;
+  padding: 20px;
+}
+.pie_button {
+  width: 100%;
+  height: 60px;
+  margin: 10px;
+  padding: 12px;
+  background-color: yellow;
+  border-radius: 50px;
+  border: 2px black;
+  border-style: dotted;
+}
+
+.pie_button {
+  animation-name: button;
+  animation-duration: 10s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes button {
+  0% {
+    border: 3px black;
+    border-style: dotted;
+  }
+  25% {
+    border: 4px rgb(245, 16, 16);
+    border-style: dotted;
+  }
+  50% {
+    border: 5px rgb(161, 250, 17);
+    border-style: dotted;
+  }
+  75% {
+    border: 6px rgb(25, 145, 41);
+    border-style: dotted;
+  }
+
+  100% {
+    border: 7px rgb(231, 142, 7);
+    border-style: dotted;
+  }
+}
+
+.texto_1 {
+  color: beige;
+  font-size: 23px;
+  text-align: justify;
+  font-style: oblique;
+  font-weight: bolder;
+}
+.descripcion_pokemon {
+  width: 100%;
+  height: autos;
+  overflow-y: scroll;
+}
+.botones_carusel {
+  background-color: black;
+  color: white;
+  border: solid 1px black;
+  width: 100%;
+  height: auto;
+}
+.ocultar {
+  display: none;
+}
+
+td,
+tr {
+  padding: 10px 20px;
+  border: 1px solid #000;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+header {
+  background-color: beige;
+  color: rgb(247, 92, 234);
+  text-align: center;
+  font-size: xx-large;
+  font-weight: bolder;
+  padding: 23;
+  border-radius: 12px;
+}
+body {
+  background-color: rgb(140, 145, 127);
+}
