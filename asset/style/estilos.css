@@ -2,10 +2,10 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
+  height: 700px;
   align-items: center;
-  background-color: aqua;
   font-family: "Roboto", sans-serif, Arial, Helvetica, "Times New Roman";
+margin-top: 134px;
 }
 .filtro {
   display: flex;
@@ -35,66 +35,33 @@
   border-radius: 50px;
 }
 
-#cont {
-  animation-name: contenedor;
-  animation-duration: 22s;
-  animation-iteration-count: infinite;
-}
-
-@keyframes contenedor {
-  0% {
-    background: radial-gradient(circle, grey, rgb(9, 250, 0), purple, pink);
-  }
-  25% {
-    background: radial-gradient(
-      circle,
-      rgb(170, 19, 19),
-      rgb(58, 223, 17),
-      rgb(218, 77, 218),
-      pink
-    );
-  }
-  50% {
-    background: radial-gradient(
-      circle,
-      rgb(61, 5, 5),
-      rgb(22, 138, 216),
-      purple,
-      pink
-    );
-  }
-  75% {
-    background: radial-gradient(circle, grey, rgb(40, 37, 223), purple, pink);
-  }
-
-  100% {
-    background: radial-gradient(circle, grey, rgb(6, 164, 192), purple, pink);
-  }
-}
 .cabeza {
   width: 500px;
   height: 80px;
   display: flex;
   flex-direction: row;
-  background-color: rgb(26, 24, 24);
+  background-color: rgb(235, 21, 21);
   margin-top: 40px;
+  border-radius: 12px;
 }
 .pie {
   width: 500px;
   height: 80px;
   display: flex;
   flex-direction: row;
-  background-color: rgb(26, 24, 24);
+  background-color: rgb(247, 18, 18);
+  margin-top: 20px;
 }
 
 .cuerpo {
   width: 500px;
-  height: 250px;
+  height: 350px;
   display: flex;
   flex-direction: row;
   perspective: 100px;
-  border-bottom: 2px rgb(19, 18, 18);
-  border-style: dashed;
+  border-bottom: 2px rgb(233, 11, 11);
+  
+ 
 }
 
 .cuerpo {
@@ -104,8 +71,9 @@
 .texto {
   width: 250px;
   height: 100%;
-  background-color: rgb(24, 21, 21);
+  background-color: rgb(233, 11, 11);
   color: white;
+  border: inset 12px white;
 }
 
 .descripcion_de_pokemon {
@@ -116,17 +84,20 @@
 .img {
   width: 250px;
   height: 100%;
-  border: 2px black;
-  border-style: dashed;
+  border: inset 12px rgb(245, 239, 239);
   overflow-y: auto;
 }
 .logo {
-  width: 140px;
-  height: 98px;
+  width: 80px;
+  height: 50px;
+  background-color: aqua;
+  border-radius: 1000%;
+  border: inset 4px rgb(255, 255, 255);
+  
 }
 .logo-img {
   width: 100%;
-  height: 90%;
+  height: 80%;
   border-radius: 70%;
 }
 
@@ -224,7 +195,6 @@
 .botones_carusel {
   background-color: black;
   color: white;
-  border: solid 1px black;
   width: 100%;
   height: auto;
 }
@@ -242,14 +212,46 @@ table {
   border-spacing: 0;
 }
 header {
-  background-color: beige;
-  color: rgb(247, 92, 234);
-  text-align: center;
-  font-size: xx-large;
-  font-weight: bolder;
-  padding: 23;
+  position: fixed;
+  top: 4px;
+  width: 100%;
+  height: 100px;
+  background-color: rgb(0, 255, 0);
+  box-shadow: 2px 3px 6px rgb(28, 29, 27);
   border-radius: 12px;
+ 
+
+ 
 }
+#logo{
+  width: 10%;
+  height: 80px;
+  border-radius:100%;
+  padding: 12px;
+  
+  
+}
+
 body {
-  background-color: rgb(140, 145, 127);
+  background-color:rgb(18, 240, 85);
+  scroll-behavior: smooth;
+}
+
+
+.pie_button:hover{
+  opacity: 0.5;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+.buscar:hover{
+  opacity: 0.5;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+}
+
+.filtrar:hover {
+opacity: 0.5;
+cursor: pointer;
 }
