@@ -17,7 +17,7 @@
   </head>
   <body>
     <header>
-     <img src="./asset/img/logo.jpg" alt="no cargo" id="logo">
+    <div class="flexLogo"><img src="./asset/img/logo.jpg" alt="no cargo" id="logo"></div> 
     <div class="titulo"> <h1>En busca de pokemon</h1></div>
     </header>
     <div id="cont">
@@ -35,12 +35,12 @@
           <button class="filtrar" type="button">filtrar</button>
         </section>
         <section>
-          <label for="tipo de pokemon">Tipo de pokemon</label>
+          <label for="tipo de pokemon">Color</label>
           <select name="pokemon" class="tipo_de_pokemon">
-            <option value="" disabled="disabled">Tipo de pokemon</option>
-            <option value="Fuego">Fuego</option>
-            <option value="Agua">Agua</option>
-            <option value="Tierra">Tierra</option>
+            <option value="" disabled="disabled">Color de pokemon</option>
+            <option value="yellow">black</option>
+            <option value="black">red</option>
+            <option value="red">yellow</option>
           </select>
         </section>
 
@@ -82,6 +82,8 @@
         <section class="descripcion_pokemon"></section>
       </footer>
     </div>
+    <script src="./asset/js/componete/ElementosSelecionado.js" type="module"></script>
     <script src="./asset/js/script.js "></script>
+    
   </body>
 </html>
