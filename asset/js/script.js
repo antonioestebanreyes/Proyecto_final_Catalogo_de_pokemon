@@ -1,4 +1,7 @@
 'use strict'
+
+
+
 const D=document
 
 
@@ -32,18 +35,44 @@ fetch(`https://pokeapi.co/api/v2/pokemon/`)
 sear.addEventListener("click",filtrar)
 function filtrar() {
   Peticion1()
-  Peticion2()
+ 
  
 
 }
 function iteracionName  (pokemones)  {
+  
   let Poke=pokemones.results
   console.log(Poke);
+  Poke.forEach(poke=>{
+    console.log(poke);
+    if(datos_de_busquedad!==poke.name){
+      NotFont()
+    }if (poke.name===datos_de_busquedad.value){
+   img_pokemon.innerHTML=""   
 const filtrado=Poke.filter(pokemones=> pokemones.name===datos_de_busquedad.value  )
 console.log(filtrado);
 nombre_pokemon.innerHTML=filtrado[0].name
+fetch(`https://pokeapi.co/api/v2/pokemon/${datos_de_busquedad.value}`)
+.then(img=>img.json())
+.then(data=>{
+  let img=data.sprites.back_default
+  console.log(data);
+  let pokes=document.createElement("img")
+  img_pokemon.appendChild(pokes)
+  pokes.setAttribute("src",img)
+  pokes.style.width="100%"
+  pokes.style.height="100%"
+  Habil(data)
+  move(data)
+})
 
-NotFont(filtrado)
+
+imgPoke()
+    }
+  })
+
+
+
 
 }
 const iteracion=(pokemones)=>{
@@ -54,7 +83,29 @@ const iteracion=(pokemones)=>{
   move(pokemonesX)
 }
 const imgPoke=(pokemonesX)=>{
-  let poke=pokemonesX.sprites.back_default
+  console.log(pokemonesX);
+  let Poke=pokemonesX.pokemon_species
+  Poke.forEach(name=>{
+    console.log(name.name);
+    let N=name.name
+   fetch(`https://pokeapi.co/api/v2/pokemon/${N}`)
+   .then(element=>element.json())
+   .then(data=> PintarSelect(data))
+  })
+
+function PintarSelect(data) {
+
+  let Inf=data
+  let img=data.sprites.back_default
+  console.log('ok',data.sprites.back_default );
+  let pokes=document.createElement("img")
+  img_pokemon.appendChild(pokes)
+  pokes.setAttribute("src",img)
+  pokes.style.width="100%"
+  pokes.style.height="100%"
+
+  
+}
 console.log(poke);
 let pokes=document.createElement("img")
   img_pokemon.appendChild(pokes)
@@ -63,6 +114,7 @@ let pokes=document.createElement("img")
   pokes.style.height="100%"
 }
  const Habil= (pokemonesX) =>{
+  txt.innerHTML=""
   let habilidad=pokemonesX.abilities
    habilidad.forEach(element => {
     console.log(element.ability.name);
@@ -73,6 +125,7 @@ let pokes=document.createElement("img")
   });
  }
 const move= (pokemonesX)=>{
+  txt.innerHTML=""
    let li= document.createElement("li")
   txt.appendChild(li)
   let move=pokemonesX.moves
@@ -85,12 +138,16 @@ const move= (pokemonesX)=>{
   })
   console.log(move);
 }
-const Peticion2=(C)=>{
-  fetch(`https://pokeapi.co/api/v2/pokemon/${datos_de_busquedad.value }`)
+
+
+const Peticion2=()=>{
+  console.log(selects1.value);
+  fetch(`https://pokeapi.co/api/v2/pokemon-color/${selects1.value }/`)
   .then((data)=>data.json())
     .then((pokemones) => iteracion(pokemones));
    
   }
+  const Select=selects1.addEventListener('change',Peticion2) 
   fil.addEventListener('click',Filtracion)
    function Filtracion(){
     
@@ -101,7 +158,7 @@ const Peticion2=(C)=>{
 
   }
 const  SelectColor=(data)=>{
-  console.log(data);
+  console.log('esta selector',data);
   const ArrayColor=data.pokemon_species
   ArrayColor.forEach(color=>{
     let C=color.name
@@ -121,8 +178,8 @@ const  SelectColor=(data)=>{
       .then((pokemones) => imgPoke(pokemones));
      
     }
-  const NotFont = (names)=>{
-        if (names.length===-0) {
+  const NotFont = ()=>{
+    img_pokemon.innerHTML=''
       const NotFond= document.createElement("img")
 img_pokemon.appendChild(NotFond)
 NotFond.setAttribute("src","./asset/img/Not.gif")
@@ -130,8 +187,9 @@ NotFond.style.width="100%"
   NotFond.style.height="100%"
   
 
-  }
+  
 }
  
 
  
+
